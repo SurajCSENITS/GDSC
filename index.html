@@ -3,305 +3,469 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trustco.</title>
+    <title>E-Cell</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dp92qug2f/image/upload/v1678341163/Ecell%20website/ecell-logo-bw2_sayvqp.webp" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
         * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Oswald', sans-serif;
+        }
+        body{
+            background: linear-gradient(rgb(161, 118, 230), rgb(60, 83, 61));
+        }
+
+        .page1 {
+            /* background: linear-gradient(pink, rgb(122, 243, 128)); */
+            color: rgb(0, 0, 0);
+        }
+
+        .main1{
+            margin: 0px 50px;
+        }
+
+        .containerofpage1 {
+            background-color: rgb(195, 199, 201);
+            position: sticky;
+            top: 0px;
+            width: 100vw;
+            box-shadow: 0px 2px 10px rgb(197, 204, 206);
+        }
+
+        nav {
+            padding: 20px;
+        }
+
+        .navlist {
+            display: inline;
+            margin: 30px;
+        }
+
+        .link {
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none;
+            color: rgb(95, 2, 2);
+            opacity: 0.6;
+        }
+
+        .link:hover {
+            color: brown;
+            opacity: 1;
+        }
+
+        section {
+            margin: 50px 0px;
+        }
+
+        section>h4 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+
+        section>div>img {
+            border: white 2px solid;
+            background-color: white;
+            border-radius: 20%;
+
+        }
+
+        .float-right {
+            float: right;
+            margin: 0px 40px;
+        }
+
+        .float-left {
+            float: left;
+            margin: 0px 40px;
+        }
+
+        #swastik {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0.7;
+        }
+
+
+
+
+
+        .page2{
+            /* background-color: rgb(125, 125, 230); */
+        }
+
+        .h2ofpage2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .description {
+            /* display: flex;
+           flex-direction: column;
+           align-items: center;
+           border: solid black 1px;  */
+           text-align: center; 
+
+        }
+
+        .h2,
+        .para {
+            /* background-color: blue; */
             margin: 0px;
-            padding: 0px;
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Montserrat:wght@100&display=swap');
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        footer {
-            background-color: rgb(204, 207, 209);
+        .sub-container {
             display: flex;
-            justify-content: space-between;
-            height: 50px;
-            align-items: center;
-            padding-left: 30px;
-            padding-right: 50px;
-            color: rgb(77, 79, 80);
+            /* border: 1px solid green; */
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 40px;
         }
 
-        .F-li {
-            display: inline-block;
-            margin: 0px 5px;
+        .fitem {
+
+            background-color: rgb(2, 2, 32);
+            color: rgb(198, 241, 241);
+            border-radius: 6px;
+            width: 300px;
+            height: 200px;
+            border: 1px solid rgb(2, 2, 32);
+            margin: 10px;
+            padding: 3px;
         }
 
-        .cont1 {
+        /* .t-stack{
+           background-color: blueviolet;
+        } */
+        .t-stack-list {
+            /* background-color: green; */
+            list-style-type: none;
+            margin: 30px 0px;
+            padding: 0;
             display: flex;
-            height: 150px;
-            padding-top: 20px;
+            justify-content: space-evenly;
+            /* gap: 15px; */
+
+        }
+
+
+        .footer{
+            border: 1px solid rgb(4, 71, 71);
+            background-color: black;
+            color: rgb(198, 241, 241);
+            display: flex;
             justify-content: space-around;
-            background-color: rgb(243, 247, 243);
-            color: rgb(26, 24, 24);
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-weight: bold;
+            position: sticky;
+            top: 100vh;
+            
         }
-
-        .article1 {
-            max-width: 600px;
-
+        .container1ofpage3>a{
+            text-decoration: none;
+            color: rgb(198, 241, 241);
         }
-
-        #addidas {
-            position: relative;
-            top: 8px;
+        .iso{
+            margin-top: 20px;
+            border-radius: 4px;
         }
-
-        .cont1-li {
+        .container2ofpage3>h2{
+            border-bottom: 2px solid #e07800;
+            padding-bottom: 10px;
             margin-bottom: 10px;
         }
-
-        .cont2 {
-            background-color: rgb(20, 20, 20);
-            display: flex;
-            height: 300px;
-            align-items: center;
-            justify-content: space-between;
-            color: white;
-            padding-left: 80px;
+        table{
+            /* border: 1px solid black; */
         }
-
-        .cont2>div>small {
-            position: relative;
-            top: 30px;
-            left: -155px;
-
+        td{
+            /* border: 1px solid black; */
+            width: 100px;
         }
-
-        .cont3{
-            display: flex;
-            height: 320px;
-            justify-content: space-evenly;
-            align-items: center;
+        .container3ofpage3>h2{
+            border-bottom: 2px solid #e07800;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
         }
-        .subCont2-cont3{
-            display: flex;
-            /* background-color: blueviolet; */
+        .container3ofpage3>ul{
+            /* border: 1px solid; */
+            list-style-type: none;
+            padding-left: 0px;
+            padding-top: 20px;
         }
-        .subCont2-cont3>div{
-            max-width: 150px;
-            padding: 15px;
-            margin-right: 20px;
-            border-radius: 8px;
+        .container3ofpage3>ul>li{
+            margin-bottom: 10px;
         }
-        .subCont1-cont3{
-            max-width: 200px;
-        }
-
-        .cont4{
-            background-color: rgb(6, 6, 54);
-            color: white;
-        }
-        .subCont1-cont4{
-            display: flex;
-            justify-content: space-around;
-            height: 80px;
-            align-items: center;
-
-        }
-        .subCont1-cont4>small{
-            max-width: 500px;
-        }
-        .subCont1-cont4>h3>span{
-            color: rgb(201, 188, 5);
-        }
-        .subCont2-cont4{
-            text-align: center;
-        }
-        .vid-sym{
-            position: relative;
-            top: 500px;
-            right: 600px;
-        }
-
-        .cont5{
-            display: flex;
-            height: 900px;
-            justify-content: space-around;
-            align-items: center;
-            padding-left: 50px;
-            padding-right: 0px;
-            background-color: rgb(244, 244, 247);
-        }
-        .subCont1-cont5{
-            max-width: 35%;
-        }
-
-        .subCont2-cont5{
-            /* background-color: brown; */
-            height: 100%;
-
-
-        }
-        header{
-            display: flex;
-            height: 50px;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0px 20px;
-            background-color: rgb(241, 241, 241)
-        }
-        header>div>ul>li{
-            display: inline-block;
-            margin-right: 10px;
-            font-weight: 500;
+        .filelinking>a{
+            color: #382004;
+            font-weight: bold;
+            font-size: larger;
+            margin-left: 20px;
         }
     </style>
+
 </head>
 
 <body>
-
-    <header>
-
-        <div>
-            <img src="https://img.freepik.com/free-icon/adidas_318-565831.jpg?w=2000" width="50px" height="30px" id="addidas">
-            <b style="font-size: larger;">Trustco.</b>
-        </div>
-        <div>
+    <header class="containerofpage1">
+        <nav>
             <ul style="list-style-type: none;">
-                <li>Features</li>
-                <li>Solutions</li>
-                <li>Company</li>
-                <li>Resources</li>
-                <li>Contact</li>
+                <li class="navlist"><a class="link" href="#sec1">Page One</a></li>
+                <li class="navlist"><a class="link" href="#sec2">Page Two</a></li>
+                <li class="navlist"><a class="link" href="#links">Links of Other Files</a></li>
+                <li class="navlist"><a class="link" href="#sec3">Footer</a></li>
             </ul>
-        </div>
-        <div>
-            <button style="background-color: white; border: none; border-radius: 10px; padding: 3px; margin-left: 2px; width: 70px;">Log In</button>
-            <button style="background-color: rgb(5, 0, 26); border: none; border-radius: 10px; padding: 3px; margin-left: 2px; color: aliceblue; width: 70px">Sign Up</button>
-        </div>
-
+        </nav>
     </header>
 
-    <div class="cont5">
+<div class="page1" id="sec1">    
+    
+    <main class="main1">
 
-        <div class="subCont1-cont5">
-            <h2>Find High-Potential Customars with Trustco.</h2><br>
-            <small style="font-weight: 500;">We provide slaes teams and Professionals with Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eveniet!</small><br>
-            <button style="background-color: rgb(0, 53, 102); border: none; outline: none; border-radius: 10px; padding: 3px; color: rgb(241, 242, 243); margin-top: 20px; margin-bottom: 15px;">Explore Our Works →</button><br>
-            <img src="https://th-i.thgim.com/public/incoming/jk5npt/article66814967.ece/alternates/FREE_1200/IMG-8731.jpg" width="60px" height="70px" style="border: 1px solid rgb(243, 236, 236); border-radius: 50%; position: relative; left: 600px; top: 240px;">
-            <img src="https://static.vecteezy.com/system/resources/previews/019/786/706/original/chatbot-icon-cute-smiling-robot-cartoon-character-illustration-png.png" width="60px" height="60px" style="border: 1px solid rgb(243, 236, 236); border-radius: 50%; position: relative; left: 1000px; top: 100px;">
-            
+        <section>
+            <h4>Shri Ram</h4>
+            <div class="float-right"><img src="Siya_Ram.jpg" alt="Ram" width="240px"></div>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ullam dicta assumenda cupiditate,
+                voluptas laboriosam tempore laudantium beatae praesentium nulla accusamus repudiandae delectus
+                consequatur quis qui? Porro quasi quibusdam incidunt vero laborum? Ipsa dignissimos, enim ad deleniti
+                incidunt necessitatibus, rerum iure autem rem mollitia quis delectus, possimus eius sed iste. Aliquam
+                corrupti quam repellendus odit blanditiis quaerat, saepe nihil nisi. Dicta natus nam rerum saepe,
+                placeat magnam harum. Non ipsam quibusdam veritatis, eaque facilis dolore eos accusantium voluptatibus,
+                ab soluta quis iste maiores hic qui pariatur corrupti eligendi facere praesentium. Odio nobis blanditiis
+                voluptas nemo, possimus a quos molestiae, autem, modi dolorem minima iusto. Obcaecati, totam
+                perspiciatis veniam iste doloremque non. Laudantium sapiente doloremque aliquid perspiciatis facilis,
+                adipisci consequatur expedita ullam ab quae! Excepturi, illo doloremque. Dolore quaerat repellendus ex,
+                laborum earum laudantium reprehenderit aliquam consectetur optio impedit accusamus illo explicabo, omnis
+                temporibus. Error delectus voluptates excepturi quam, cum tempore voluptatibus hic nulla assumenda
+                soluta, cumque, rem quod? Facere illum repellendus commodi mollitia perspiciatis maiores ad, optio iure
+                autem, ipsa assumenda odio unde sed cupiditate accusamus praesentium hic ducimus, debitis quidem? Fugiat
+                esse minus necessitatibus iusto voluptate quidem nemo, voluptas, laborum explicabo tempora sint eveniet
+                unde, inventore exercitationem. Saepe eveniet corrupti odio eos! Assumenda dicta ea veritatis
+                perferendis quibusdam vel voluptatem soluta recusandae? Libero incidunt dicta repellat corporis tenetur
+                eligendi! Fugit magnam debitis doloremque error quas nobis nemo dolor? Quasi natus ratione veniam
+                nesciunt alias cum dicta vel doloribus neque, totam dolorum facilis reiciendis quos autem. Quisquam
+                quaerat alias magni esse odit non praesentium quae, ipsum amet fuga. Consectetur explicabo veniam
+                architecto voluptatibus dolore voluptatum quas commodi! Repellat, doloremque natus fugiat hic laboriosam
+                veritatis architecto amet odit, vero dicta omnis quis impedit incidunt voluptatibus dolor! Accusamus
+                quia voluptates modi dolore, voluptatibus maxime iste, eos illo sint quam eum harum ut autem perferendis
+                ipsum architecto et culpa vero sit atque quae. Consectetur ad sed asperiores? Voluptatum dicta
+                voluptatibus saepe eos. Natus ipsum perferendis cumque temporibus iste illum, consectetur error sapiente
+                repellat voluptatum ipsam consequatur quae harum, sed est qui enim consequuntur.
+            </article>
+        </section>
+
+        <section>
+            <h4>Shri Krishna</h4>
+            <div class="float-left"><img src="Krishn.jpeg" alt="Krishna" width="240px"></div>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ullam dicta assumenda cupiditate,
+                voluptas laboriosam tempore laudantium beatae praesentium nulla accusamus repudiandae delectus
+                consequatur quis qui? Porro quasi quibusdam incidunt vero laborum? Ipsa dignissimos, enim ad deleniti
+                incidunt necessitatibus, rerum iure autem rem mollitia quis delectus, possimus eius sed iste. Aliquam
+                corrupti quam repellendus odit blanditiis quaerat, saepe nihil nisi. Dicta natus nam rerum saepe,
+                placeat magnam harum. Non ipsam quibusdam veritatis, eaque facilis dolore eos accusantium voluptatibus,
+                ab soluta quis iste maiores hic qui pariatur corrupti eligendi facere praesentium. Odio nobis blanditiis
+                voluptas nemo, possimus a quos molestiae, autem, modi dolorem minima iusto. Obcaecati, totam
+                perspiciatis veniam iste doloremque non. Laudantium sapiente doloremque aliquid perspiciatis facilis,
+                adipisci consequatur expedita ullam ab quae! Excepturi, illo doloremque. Dolore quaerat repellendus ex,
+                laborum earum laudantium reprehenderit aliquam consectetur optio impedit accusamus illo explicabo, omnis
+                temporibus. Error delectus voluptates excepturi quam, cum tempore voluptatibus hic nulla assumenda
+                soluta, cumque, rem quod? Facere illum repellendus commodi mollitia perspiciatis maiores ad, optio iure
+                autem, ipsa assumenda odio unde sed cupiditate accusamus praesentium hic ducimus, debitis quidem? Fugiat
+                esse minus necessitatibus iusto voluptate quidem nemo, voluptas, laborum explicabo tempora sint eveniet
+                unde, inventore exercitationem. Saepe eveniet corrupti odio eos! Assumenda dicta ea veritatis
+                perferendis quibusdam vel voluptatem soluta recusandae? Libero incidunt dicta repellat corporis tenetur
+                eligendi! Fugit magnam debitis doloremque error quas nobis nemo dolor? Quasi natus ratione veniam
+                nesciunt alias cum dicta vel doloribus neque, totam dolorum facilis reiciendis quos autem. Quisquam
+                quaerat alias magni esse odit non praesentium quae, ipsum amet fuga. Consectetur explicabo veniam
+                architecto voluptatibus dolore voluptatum quas commodi! Repellat, doloremque natus fugiat hic laboriosam
+                veritatis architecto amet odit, vero dicta omnis quis impedit incidunt voluptatibus dolor! Accusamus
+                quia voluptates modi dolore, voluptatibus maxime iste, eos illo sint quam eum harum ut autem perferendis
+                ipsum architecto et culpa vero sit atque quae. Consectetur ad sed asperiores? Voluptatum dicta
+                voluptatibus saepe eos. Natus ipsum perferendis cumque temporibus iste illum, consectetur error sapiente
+                repellat voluptatum ipsam consequatur quae harum, sed est qui enim consequuntur.
+            </article>
+        </section>
+
+        <div id="swastik">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzGq15mdlauAEB070W9AJ_Kc72PhaY-6JRRV2gp_w&s"
+                width="80px" alt="">
         </div>
+    </main>
+</div>
 
-        <div class="subCont2-cont5">
-            <img src="https://miro.medium.com/v2/resize:fit:1024/1*ZSbjnPGWPr2wko0pGH-gQg.png" height="100%" width="850px" style="background: none; margin-right: 0;">           
+<div class="page2" id="sec2">
+
+    <!-- container -->
+    <div class="containerofpage2">
+        <!-- description -->
+        <div class="description">
+            <h2 class="h2 h2ofpage2">Projects Card</h2>
+            <p class="para">Flex mini project of card demo</p>
         </div>
-    </div>
-
-    <div class="cont4">
-
-        <div class="subCont1-cont4">
-            <h3>High-Level Sales <span>Teams & Professionals</span></h3>           
-            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit possimus optio molestiae saepe, illum veniam dolores, dignissimos in facere.</small>
-            <img src="https://www.pngall.com/wp-content/uploads/12/Video-Symbol-PNG-HD-Image.png" width="80px" height="80px" class="vid-sym">
-        </div>
-
-        <div class="subCont2-cont4">
-            <img src="https://previews.123rf.com/images/vadymvdrobot/vadymvdrobot1608/vadymvdrobot160800907/61584143-group-of-happy-young-business-people-using-laptop-and-working-together-in-office.jpg" width="90%" height="80%" style="border-radius: 10px;">
-            <!-- <img src="https://www.pngall.com/wp-content/uploads/12/Video-Symbol-PNG-HD-Image.png" width="80px" height="80px" class="vid-sym"> -->
-        </div>
-    </div>
-
-    <div class="cont3">
-
-        <div class="subCont1-cont3">
-            <span style="background-color: rgb(1, 1, 48); color: white; border-radius: 15px; padding: 5px; position: relative; top: -20px;">Beneficial</span>
-            <h2>Benefical Elements</h2><br>
-            <p>An awesome & powerful tools for your business, increase business revenue</p>          
-        </div>
-        <div class="subCont2-cont3">
-            <div style="background-color: rgb(245, 248, 250);">
-                <img src="https://cdn-icons-png.flaticon.com/512/4616/4616271.png" width="50px" height="50px">
-                <h3>Happy Customars</h3><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum obcaecati vitae modi fugiat perspiciatis ipsum expedita nisi ipsam nobis. Tempora!</p>
+        <!-- project card container -->
+        <div class="sub-container">
+            <!-- project item 1 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
             </div>
-            <div style="background-color: rgb(245, 248, 250);">
-                <img src="https://cdn-icons-png.flaticon.com/512/1698/1698535.png" width="50px" height="50px">
-                <h3>Happy Customars</h3><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum obcaecati vitae modi fugiat perspiciatis ipsum expedita nisi ipsam nobis. Tempora!</p>
+            <!-- project item 2 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
             </div>
-            <div style="background-color: rgb(245, 248, 250);">
-                <img src="https://ochatbot.com/wp-content/uploads/2018/03/chatbot-icon.png" width="50px" height="50px">
-                <h3>Happy Customars</h3><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum obcaecati vitae modi fugiat perspiciatis ipsum expedita nisi ipsam nobis. Tempora!</p>
+            <!-- project item 3 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
             </div>
-            
+            <!-- project item 4 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- project item 5 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- project item 6 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- project item 7 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
     </div>
-
-    <div class="cont2">
-
-        <div>
-            <h1>Take Your Customar</h1><br>
-            <h1>Service To The Next Level</h1>
-            <button
-                style="background-color: rgb(216, 168, 8); border: none; outline: none; border-radius: 10px; padding: 3px; color: rgb(241, 242, 243); margin-top: 20px; margin-bottom: 15px;">Get
-                14 Days Free Trail →</button>
-            <small style="color: rgb(153, 157, 160);">No Credit Card required</small>
-        </div>
-        <img src="https://previews.123rf.com/images/vadymvdrobot/vadymvdrobot1509/vadymvdrobot150900926/45832152-portrait-of-a-happy-young-woman-sitting-on-the-city-stairs-and-using-laptop-computer-outdoors.jpg"
-            width="540px" height="100%">
-
+    <div class="filelinking" id="links">
+        <a href="positionIncssAss6.html" target="_blank">Click here to go to a Pokemon game!</a><br>
+        <a href="Ass_Flex_2.html" target="_blank">Click here to see the PW Skills advertisement</a><br>
+        <a href="contact_form.html" target="_blank">Click here to open a Contact form</a>
     </div>
+</div>
 
-    <div class="cont1">
+<div class="page3" id="sec3">
 
-        <div>
-            <img src="https://img.freepik.com/free-icon/adidas_318-565831.jpg?w=2000" width="50px" height="30px"
-                id="addidas">
-            <b style="font-size: larger;">Trustco.</b><br><br>
-            <img src="https://www.pngitem.com/pimgs/m/18-185947_fb-icon-png-facebook-logo-grey-circle-transparent.png"
-                width="40px" height="30px"><img
-                src="https://w7.pngwing.com/pngs/998/289/png-transparent-instagram-icon-logo-grayscale-graphic-designer-instagram-customer-service-miscellaneous-angle-gdragon.png"
-                width="40px" height="30px"><img
-                src="https://toppng.com/uploads/preview/youtube-black-logo-11549680987z3oylzt1lb.png" width="40px"
-                height="30px">
+    <footer class="footer">
+
+        <div class="container1ofpage3">
+            <img src="https://pwskills.com/images/PWSkills-white.png" width="100px" height="50px"><br>
+            <b>Email us:</b><br>
+            <a href="mailto:support@pwskills.com">support@pwskills.com</a><br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EnQStKgVd6g_SmLk47sbqR-6T8n4UBzvJDAqfvdC&s" width="100px" height="100px" class="iso"><br>
+            <span>ISO 9001</span>
 
         </div>
-        <div class="article1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, non! Fugiat veritatis minus libero. Sed
-            exercitationem officiis, quam vel earum repudiandae, facere eaque architecto eveniet nam nemo dolorem
-            quibusdam excepturi expedita saepe totam. Totam odit minus, possimus repudiandae exercitationem sapiente
-            similique ipsum eum temporibus. Odio ullam fuga neque dicta qui!
+
+        <div class="container2ofpage3">
+            <h2>PW Skills</h2>
+            <table cellpadding="13px" cellspacing="10px" >
+                <tr>
+                    <td>About Us</td>
+                    <td>Contact Us</td>
+                </tr>
+                <tr>
+                    <td>FAQs</td>
+                    <td>Job assistance</td>
+                </tr>
+                <tr>
+                    <td>Privacy policy</td>
+                    <td>Terms and conditions</td>
+                </tr>
+            </table>
         </div>
-        <div>
-            <ul style="list-style-type: none;">
-                <li style="font-weight: bolder;" class="cont1-li">Home</li>
-                <li class="cont1-li">Features</li>
-                <li class="cont1-li">Solutions</li>
-                <li class="cont1-li">Resources</li>
-                <li class="cont1-li">Pricing</li>
+
+        <div class="container3ofpage3">
+            <h2>Products</h2>
+            <ul>
+                <li>PW Skills Lab</li>
+                <li>Job Portal</li>
+                <li>Experience portal</li>
+                <li>Become an affilitate</li>
+                <li>Hall of fame</li>
             </ul>
         </div>
 
-    </div>
-
-    <footer>
-        <div>
-            Ⓒ2022-2023 Trustco.
-        </div>
-        <div>
-            <ul style="list-style-type: none;">
-                <li class="F-li">Terms of Service</li>
-                <li class="F-li">Privacy Policy</li>
-                <li class="F-li">Language</li>
-            </ul>
-        </div>
-        <div>
-            <select style="width: 80px; background: none; border: none; outline: none; color: rgb(77, 79, 80);">
-                <option value="1">English</option>
-                <option value="2">Hindi</option>
-                <option value="3">Bengali</option>
-            </select>
-        </div>
     </footer>
+
+
+
+
+
+</div>
+
 
 </body>
 
